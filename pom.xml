@@ -13,7 +13,7 @@
     </parent>
 
     <artifactId>iwvg-devops-pulido-ivan</artifactId>
-    <groupId>es.upm.miw</groupId>
+    <groupId>bm0631</groupId>
     <version>4.0.0</version>
     <packaging>jar</packaging>
 
