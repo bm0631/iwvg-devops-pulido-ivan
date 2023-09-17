@@ -8,3 +8,4 @@
 
 [![DevOps](https://github.com/bm0631/iwvg-devops-pulido-ivan/actions/workflows/CI.yml/badge.svg)](https://github.com/bm0631/iwvg-devops-pulido-ivan/actions/workflows/CI.yml)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=bm0631_iwvg-devops-pulido-ivan&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=bm0631_iwvg-devops-pulido-ivan)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=bm0631_iwvg-devops-pulido-ivan&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=bm0631_iwvg-devops-pulido-ivan)
