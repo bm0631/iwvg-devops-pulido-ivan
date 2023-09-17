@@ -14,7 +14,7 @@
 
     <artifactId>iwvg-devops-pulido-ivan</artifactId>
     <groupId>bm0631</groupId>
-    <version>4.0.0</version>
+    <version>4.0.0-Release</version>
     <packaging>jar</packaging>
 
     <name>${project.groupId}.${project.artifactId}</name>
