@@ -4,7 +4,6 @@
 
 ### Ivan Pulido Diaz bm0631
 
-
 ### Estado del código
 
 [![DevOps](https://github.com/bm0631/iwvg-devops-pulido-ivan/actions/workflows/CI.yml/badge.svg)](https://github.com/bm0631/iwvg-devops-pulido-ivan/actions/workflows/CI.yml)
