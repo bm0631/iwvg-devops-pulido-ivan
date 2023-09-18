@@ -1,5 +1,6 @@
 package es.upm.miw.iwvg_devops.rest.code;
 
+import es.upm.miw.iwvg_devops.code.Fraction;
 import es.upm.miw.iwvg_devops.code.Searches;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -34,4 +35,15 @@ class SearchesTest {
         assertTrue(resulList.contains("P."));
     }
 
+    @Test
+    void testFindFractionAdditionByUserId() {
+        Fraction fractionResult1 = this.searches.findFractionAdditionByUserId("1");
+        assertEquals(3, fractionResult1.getNumerator());
+        assertEquals(1, fractionResult1.getDenominator());
+
+        Fraction fractionExpected = new Fraction(109, 30);
+        Fraction fractionResult2 = this.searches.findFractionAdditionByUserId("2");
+        assertTrue(fractionExpected.isEquivalent(fractionResult2));
+
+    }
 }
