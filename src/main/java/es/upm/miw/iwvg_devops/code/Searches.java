@@ -22,7 +22,7 @@ public class Searches {
     public Fraction findFractionAdditionByUserId(String id) {
         return new UsersDatabase().findAll()
                 .filter(user -> user.getId().equals(id))
-                .map(User::sumFractions).findFirst().get();
+                .map(User::sumFractions).findFirst().orElse(null);
     }
 
 }
