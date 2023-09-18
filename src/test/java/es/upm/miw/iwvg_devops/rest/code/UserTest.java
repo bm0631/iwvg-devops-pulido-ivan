@@ -104,4 +104,11 @@ class UserTest {
         assertEquals(6, fractionResult.getDenominator());
     }
 
+    @Test
+    void testSubtractionFractions() {
+        Fraction fractionResult = this.user.subtractionFractions();
+        assertEquals(-5, fractionResult.getNumerator());
+        assertEquals(6, fractionResult.getDenominator());
+    }
+
 }

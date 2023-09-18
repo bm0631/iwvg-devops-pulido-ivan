@@ -46,4 +46,16 @@ class SearchesTest {
         assertTrue(fractionExpected.isEquivalent(fractionResult2));
 
     }
+
+    @Test
+    void testFindFractionSubtractionByUserName() {
+        Fraction fractionResult1 = this.searches.findFractionSubtractionByUserName("Oscar");
+        assertEquals(-3, fractionResult1.getNumerator());
+        assertEquals(1, fractionResult1.getDenominator());
+
+        Fraction fractionExpected = new Fraction(-109, 30);
+        Fraction fractionResult2 = this.searches.findFractionSubtractionByUserName("Ana");
+        assertTrue(fractionExpected.isEquivalent(fractionResult2));
+
+    }
 }

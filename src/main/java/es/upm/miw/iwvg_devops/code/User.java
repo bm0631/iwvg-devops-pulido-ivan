@@ -72,6 +72,13 @@ public class User {
         return fractionResul;
     }
 
+    public Fraction subtractionFractions() {
+        Fraction fractionResul = new Fraction(0, 1);
+        Stream<Fraction> stream = this.fractions.stream();
+        stream.forEach(fraction -> fractionResul.add(fraction.getNegativeFraction()));
+        return fractionResul;
+    }
+
     @Override
     public String toString() {
         return "User{" +
