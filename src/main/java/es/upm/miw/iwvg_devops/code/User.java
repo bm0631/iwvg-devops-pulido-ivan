@@ -2,6 +2,7 @@ package es.upm.miw.iwvg_devops.code;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class User {
     private String id;
@@ -62,6 +63,13 @@ public class User {
 
     public String initialsFamilyName() {
         return this.familyName.substring(0, 1) + ".";
+    }
+
+    public Fraction sumFractions() {
+        Fraction fractionResul = new Fraction(0, 1);
+        Stream<Fraction> stream = this.fractions.stream();
+        stream.forEach(fractionResul::add);
+        return fractionResul;
     }
 
     @Override

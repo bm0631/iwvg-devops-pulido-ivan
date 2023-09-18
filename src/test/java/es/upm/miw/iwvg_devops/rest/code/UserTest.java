@@ -97,5 +97,11 @@ class UserTest {
         assertEquals(stringExpected, this.user.toString());
     }
 
+    @Test
+    void testSumFractions() {
+        Fraction fractionResult = this.user.sumFractions();
+        assertEquals(5, fractionResult.getNumerator());
+        assertEquals(6, fractionResult.getDenominator());
+    }
 
 }
