@@ -11,5 +11,12 @@ public class Searches {
                 .filter(decimal -> decimal < 0);
     }
 
+    public Stream<String> findUserFamilyNameInitialBySomeProperFraction() {
+        return new UsersDatabase().findAll()
+                .filter(user -> user.getFractions().stream()
+                        .anyMatch(Fraction::isPopper))
+                .map(User::initials)
+                .distinct();
+    }
 
 }

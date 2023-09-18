@@ -25,4 +25,13 @@ class SearchesTest {
         assertTrue(resulList.contains(-0.5));
     }
 
+    @Test
+    void testFindUserFamilyNameInitialBySomeProperFraction() {
+        List<String> resulList = this.searches.findUserFamilyNameInitialBySomeProperFraction().toList();
+        assertEquals(3, resulList.size());
+        assertTrue(resulList.contains("O."));
+        assertTrue(resulList.contains("A."));
+        assertTrue(resulList.contains("P."));
+    }
+
 }

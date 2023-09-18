@@ -81,6 +81,11 @@ class UserTest {
     }
 
     @Test
+    void testInitialFamilyNamesUser() {
+        assertEquals("G.", this.user.initialsFamilyName());
+    }
+
+    @Test
     void testToStringUser() {
         String stringExpected = "User{" +
                 "id='1'" +
