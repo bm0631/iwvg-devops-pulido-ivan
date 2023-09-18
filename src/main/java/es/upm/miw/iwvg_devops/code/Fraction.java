@@ -88,6 +88,10 @@ public class Fraction {
         }
     }
 
+    public Fraction getNegativeFraction() {
+        return new Fraction(-this.getNumerator(), this.getDenominator());
+    }
+
     public void multiply(Fraction fraction) {
         this.numerator *= fraction.getNumerator();
         this.denominator *= fraction.getDenominator();

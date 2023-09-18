@@ -112,4 +112,11 @@ class FractionTest {
 
     }
 
+    @Test
+    void testGetNegativeFraction() {
+        Fraction fractionResult = this.fraction.getNegativeFraction();
+        assertEquals(-2, fractionResult.getNumerator());
+        assertEquals(3, fractionResult.getDenominator());
+    }
+
 }

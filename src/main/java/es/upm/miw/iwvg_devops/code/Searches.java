@@ -25,4 +25,10 @@ public class Searches {
                 .map(User::sumFractions).findFirst().orElse(null);
     }
 
+    public Fraction findFractionSubtractionByUserName(String name) {
+        return new UsersDatabase().findAll()
+                .filter(user -> user.getName().equals(name))
+                .map(User::subtractionFractions).findFirst().orElse(null);
+    }
+
 }
